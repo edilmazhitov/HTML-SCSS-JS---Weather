@@ -1,0 +1,16 @@
+{
+  "name": "weather",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "sass-watch": "sass --watch ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "sass": "^1.90.0"
+  }
+}
