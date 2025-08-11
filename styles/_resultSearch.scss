@@ -1,0 +1,17 @@
+.result {
+  justify-content: center;
+  display: flex;
+
+  &__block {
+    width: 500px;
+    height: 600px;
+    background-color: deepskyblue;
+    border: 3px solid blue;
+    border-radius: 16px;
+  }
+
+  &__images {
+    width: 150px;
+    height: 150px;
+  }
+}
