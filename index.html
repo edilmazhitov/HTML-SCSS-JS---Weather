@@ -1,97 +1,109 @@
-<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta
-    name="viewport"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-  >
-  <meta
-    http-equiv="X-UA-Compatible"
-    content="ie=edge"
-  >
-  <title>Weather</title>
-  <link
-    rel="stylesheet"
-    href="./styles/styles.css"
-  >
-</head>
-<body>
+  <!doctype html>
+  <html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge"
+    >
+    <title>Weather</title>
+    <link
+      rel="stylesheet"
+      href="./styles/styles.css"
+    >
+  </head>
+  <body>
 
 
-<header class="header">
-  <div class="container">
-    <div class="header__block">
-      <h1 class="header__title">
-        Погода от <br>
-        <span>Эдиля</span>
-      </h1>
-      <nav class="header__nav">
-        <ul class="header__list">
-          <li class="header__list-item">
-            <a
-              href="/"
-              class="header__link"
-            >
-              Поиск
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a
-              href=""
-              class="header__link"
-            >
-              Информация
-            </a>
-          </li>
-          <li class="header__list-item">
-            <a
-              href=""
-              class="header__link"
-            >
-              Дополнительное
-            </a>
-          </li>
-        </ul>
-      </nav>
-      <button class="header__btn">
-        Информация
-      </button>
-    </div>
-  </div>
-</header>
-
-<main class="main">
-  <section class="search-city">
+  <header class="header" id="header">
     <div class="container">
-      <h2 class="search-city__title">
-        Поиск по городу
-      </h2>
-      <h3 class="search-city__subtitle">
-        Выведите название города или страну:
-      </h3>
-      <form action="" class="search-city__form">
-        <label>
-          <input
-            class="search-city__input"
-            type="text"
-          >
-        </label>
-        <button type="submit" class="search-city__button">Поиск</button>
-      </form>
-    </div>
-  </section>
-  <section class="result">
-    <div class="container">
-      <div class="result__block">
+      <div class="header__block">
+        <h1 class="header__title">
+          Погода от <br>
+          <span>Эдиля</span>
+        </h1>
+        <div class="header__overlay" id="burger-overlay">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__list-item">
+                <a
+                  href="/"
+                  class="header__link"
+                >
+                  Поиск
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a
+                  href=""
+                  class="header__link"
+                >
+                  Информация
+                </a>
+              </li>
+              <li class="header__list-item">
+                <a
+                  href=""
+                  class="header__link"
+                >
+                  Дополнительное
+                </a>
+              </li>
+            </ul>
+          </nav>
 
+          <button class="header__button">
+            Информация
+          </button>
+        </div>
+
+
+        <button class="burger-menu" id="burger-btn">
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+          <span class="burger-menu__line"></span>
+        </button>
       </div>
     </div>
-  </section>
-</main>
+  </header>
+
+  <main class="main">
+    <section class="search-city">
+      <div class="container">
+        <h2 class="search-city__title">
+          Поиск по городу
+        </h2>
+        <h3 class="search-city__subtitle">
+          Выведите название города или страну:
+        </h3>
+        <form action="" class="search-city__form">
+          <label>
+            <input
+              class="search-city__input"
+              type="text"
+            >
+          </label>
+          <button type="submit" class="search-city__button">Поиск</button>
+        </form>
+      </div>
+    </section>
+    <section class="result">
+      <div class="container">
+        <div class="result__block">
+
+        </div>
+      </div>
+    </section>
+  </main>
 
 
 
-<script src="./scripts/index.js" type="module" defer></script>
-</body>
-</html>
+
+  <script src="./scripts/index.js" type="module" defer></script>
+  <script src="./scripts/burgerMenu.js" defer></script>
+  </body>
+  </html>

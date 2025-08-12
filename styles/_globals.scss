@@ -6,6 +6,16 @@
   text-decoration: none;
 }
 
+html {
+  &.is-lock {
+    overflow: hidden;
+  }
+}
+
+:root {
+  --transition-duration: 0.3s;
+}
+
 .container {
   max-width: 1200px;
   padding: 0 20px;
