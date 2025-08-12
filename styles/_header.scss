@@ -1,15 +1,15 @@
-@use "./abstracts" as *;
+@use './abstracts' as *;
 
 .header {
   background-color: grey;
   height: 80px;
   padding: 8px 0;
 
-  @include media("laptop") {
+  @include media('laptop') {
     padding: 6px 0;
     height: 70px;
   }
-  @include media("tablet-x") {
+  @include media('tablet-x') {
     padding: 2px 0;
     height: 55px;
   }
@@ -26,25 +26,24 @@
       color: orangered;
     }
 
-    @include media("laptop") {
+    @include media('laptop') {
       font-size: 24px;
     }
-    @include media("tablet-x") {
+    @include media('tablet-x') {
       font-size: 18px;
     }
   }
 
   &__overlay {
-
     display: flex;
     justify-content: space-between;
     width: 900px;
 
-    @include media("tablet-x") {
+    @include media('tablet-x') {
       width: 600px;
     }
 
-    @include media("tablet") {
+    @include media('tablet') {
       width: 100%;
       position: fixed;
       inset: 0;
@@ -57,28 +56,25 @@
       background-color: black;
       transition-duration: var(--transition-duration);
 
-
       &:not(.is-active) {
-      @include hide;
+        @include hide;
 
-      translate: 100%;
-    }
+        translate: 100%;
+      }
     }
   }
 
   &__nav {
     width: 500px;
 
-    @include media("laptop") {
+    @include media('laptop') {
       width: 450px;
     }
-    @include media("tablet-x") {
+    @include media('tablet-x') {
       width: 400px;
     }
-    @include media("tablet") {
-
+    @include media('tablet') {
       overflow-y: auto;
-
     }
   }
 
@@ -86,11 +82,10 @@
     justify-content: space-between;
     text-align: center;
     display: flex;
-    @include media("tablet") {
+    @include media('tablet') {
       flex-direction: column;
       row-gap: 16px;
     }
-
   }
 
   &__link {
@@ -102,11 +97,10 @@
       color: #0dc20d;
     }
 
-    @include media("laptop") {
+    @include media('laptop') {
       font-size: 16px;
       display: block;
     }
-
   }
 
   &__button {
@@ -125,22 +119,22 @@
       font-size: 18px;
     }
 
-    @include media("laptop") {
+    @include media('laptop') {
       width: 180px;
       height: 40px;
     }
-    @include media("tablet-x") {
+    @include media('tablet-x') {
       width: 160px;
       height: 35px;
       font-size: 16px;
     }
-    @include media("tablet") {
+    @include media('tablet') {
       width: 100%;
       max-width: 400px;
       height: 50px;
       align-self: center;
     }
-    @include media("phablet") {
+    @include media('phablet') {
       width: 100%;
       max-width: 400px;
       height: 50px;

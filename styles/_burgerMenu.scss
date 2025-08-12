@@ -1,4 +1,4 @@
-@use "./abstracts" as *;
+@use './abstracts' as *;
 .burger-menu {
   @include square(34px);
 
@@ -15,8 +15,7 @@
   @include hover-supported {
     color: yellow;
   }
-  @include media("tablet") {
-
+  @include media('tablet') {
     display: inline-flex;
   }
 
@@ -24,7 +23,7 @@
     .burger-menu__line {
       &:first-child {
         rotate: 45deg;
-        translate: .100em 0.5em;
+        translate: 0.1em 0.5em;
       }
       &:nth-child(2) {
         rotate: -45deg;
@@ -32,7 +31,6 @@
       &:last-child {
         width: 0;
       }
-
     }
   }
 
@@ -42,5 +40,4 @@
 
     background-color: currentColor;
   }
-
 }

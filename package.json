@@ -4,6 +4,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "p-check": "npx prettier . --check",
+    "p-fix": "npx prettier . --write",
     "sass-watch": "sass --watch ."
   },
   "keywords": [],
